@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Minimalist Weather App Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1D5B79;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: center;
+    transition: height 0.5s ease-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+    overflow: hidden; /* Add overflow hidden to clip content during transitions */
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    color: #06283D;
+    width: 80%;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.search-box input::placeholder {
+    font-size: 18px;
+    font-weight: 500;
+    color: #06283D;
+    text-transform: capitalize;
+}
+
+.search-box button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    color: #06283D;
+    background: #F3AA60;
+    border-radius: 50%;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    color: #fff;
+    background-color: #468B97;
+}
+
+.weather-box img {
+    width: 60%;
+    margin-top: 20px;
+}
+
+.weather-box .temperature {
+    position: relative;
+    color: #1D5B79;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.weather-box .temperature span {
+    position: absolute;
+    margin-left: 2px;
+    font-size: 1.2rem;
+}
+
+.weather-box .description {
+    color: #1D5B79;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.weather-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.weather-details .humidity,
+.weather-details .wind {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 40px;
+}
+
+.weather-details .wind {
+    padding-left: 20px;
+    justify-content: flex-start;
+    
+}
+.weather-details .humidity {
+    padding-right: 20px;
+    justify-content: flex-end;
+    
+}
+
+.weather-details i {
+    color: #1D5B79;
+    font-size: 20px;
+    margin-right: 6px;
+    margin-top: 4px;
+}
+
+.weather-details span {
+    color: #1D5B79;
+    font-size: 18px;
+    font-weight: 500;
+}
+.credit{
+    font-size: 10px;
+    margin-top: 20px;
+}
+.not-found{
+    margin-bottom: 220px;
+}
